@@ -1,13 +1,13 @@
 # FPGA-based Ultrasonic Sensor Data Acquisition System
 
-This project implements a simple **ultrasonic distance measurement system** using an **iCE40HX1K FPGA board** and **HC-SR04 ultrasonic sensor**. The design is implemented in Verilog HDL and the measured distance is transmitted over UART, which can be monitored through a serial terminal like `screen` or `minicom` on a Linux machine.
+This project implements a simple **ultrasonic distance measurement system** using an **VSDSquadron mini FPGA board** and **HC-SR04 ultrasonic sensor**. The design is implemented in Verilog HDL and the measured distance is transmitted over UART, which can be monitored through a serial terminal like `screen` or `minicom` on a Linux machine.
 
 ---
 
 ## 📷 Overview
 
 - **Sensor**: HC-SR04 Ultrasonic Sensor
-- **FPGA**: iCE40HX1K (TQ144 package)
+- **FPGA**: VSDSquadron mini FPGA (TQ144 package)
 - **Interface**: UART Serial at 9600 baud rate
 - **Tools Used**:
   - Yosys (for synthesis)
@@ -45,7 +45,7 @@ This project implements a simple **ultrasonic distance measurement system** usin
 
 ```
             +-----------------------+
-            |   iCE40HX1K FPGA      |
+            |   VSDSquadron FPGA    |
             |                       |
             |   20 ---> clk         |
             |   4  ---> trig        |
