@@ -1,5 +1,5 @@
-`include "uart_trx.v"
-`include "ultra_sonic_sensor.v"
+`include "uart_tx.v"
+`include "sensor.v"
 
 //----------------------------------------------------------------------------
 //                         Module Declaration
@@ -61,7 +61,6 @@ module top (
 
   //----------------------------------------------------------------------------
   // 4) Ultrasonic Sensor signals
-  //    We'll assume ultra_sonic_sensor.v (hc_sr04) has output distance_cm [15:0]
   //----------------------------------------------------------------------------
   wire [23:0] distanceRAW;       // If the sensor module also provides raw
   wire [15:0] distance_cm;       // MUST exist in hc_sr04, or define it
